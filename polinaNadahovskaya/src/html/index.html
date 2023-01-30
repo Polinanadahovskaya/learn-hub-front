@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/css/main.css" />
+    <script src="../js/index.js" type="module"></script>
+    <title>Blog</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-logo-wrap">
+        <div class="header-logo">
+          <a class="header-logo__link" href="index.html">My blog</a>
+        </div>
+      </div>
+      <div class="header-main-wrap">
+        <div class="header-main">
+          <nav class="topnav">
+            <input type="text" id="search" class="topnav__searchbar" placeholder="Search..." />
+            <label for="search" class="sr-only">Поиск по сайту</label>
+            <a class="topnav__link open-modal">Добавить Статью</a>
+            <div class="burger">
+              <input type="checkbox" id="burger" class="burger__checkbox" />
+              <label for="burger" class="burger__label">
+                <div class="burger__line"></div>
+                <div class="burger__line"></div>
+                <div class="burger__line"></div>
+              </label>
+              <nav class="menu">
+                <a class="menu__link open-modal">Добавить cтатью</a>
+              </nav>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main-wrap">
+        <section class="main-articles">
+          <article class="card">
+            <figure class="card-image">
+              <img src="../imgs/leaf.png" alt="image" class="card-image__img" />
+            </figure>
+            <div class="card-article">
+              <h1 class="card-article__title">Название статьи</h1>
+              <p class="card-article__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+              </p>
+              <a href="./aboutus.html" class="card-article__link">Читать далее</a>
+              <div class="counter">
+                <div class="counter__count">300</div>
+                <button class="counter__plus counter__btn">+</button>
+                <button class="counter__minus counter__btn">-</button>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <figure class="card-image">
+              <img src="../imgs/leaf.png" alt="image" class="card-image__img" />
+            </figure>
+            <div class="card-article">
+              <h1 class="card-article__title">Название статьи</h1>
+              <p class="card-article__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+              </p>
+              <a href="#" class="card-article__link">Читать далее</a>
+              <div class="counter">
+                <div class="counter__count">300</div>
+                <button class="counter__plus counter__btn">+</button>
+                <button class="counter__minus counter__btn">-</button>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <figure class="card-image">
+              <img src="../imgs/party.jpg" alt="image" class="card-image__img" />
+            </figure>
+            <div class="card-article">
+              <h1 class="card-article__title">Название статьи</h1>
+              <p class="card-article__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+              </p>
+              <a href="#" class="card-article__link">Читать далее</a>
+              <div class="counter">
+                <div class="counter__count">300</div>
+                <button class="counter__plus counter__btn">+</button>
+                <button class="counter__minus counter__btn">-</button>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <figure class="card-image">
+              <img src="../imgs/meeting.jpg" alt="image" class="card-image__img" />
+            </figure>
+            <div class="card-article">
+              <h1 class="card-article__title">Название статьи</h1>
+              <p class="card-article__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+              </p>
+              <a href="#" class="card-article__link">Читать далее</a>
+              <div class="counter">
+                <div class="counter__count">300</div>
+                <button class="counter__plus counter__btn">+</button>
+                <button class="counter__minus counter__btn">-</button>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <figure class="card-image">
+              <img src="../imgs/leaf.png" alt="image" class="card-image__img" />
+            </figure>
+            <div class="card-article">
+              <h1 class="card-article__title">Название статьи</h1>
+              <p class="card-article__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+              </p>
+              <a href="#" class="card-article__link">Читать далее</a>
+              <div class="counter">
+                <div class="counter__count">300</div>
+                <button class="counter__plus counter__btn">+</button>
+                <button class="counter__minus counter__btn">-</button>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <figure class="card-image">
+              <img src="../imgs/leaf.png" alt="image" class="card-image__img" />
+            </figure>
+            <div class="card-article">
+              <h1 class="card-article__title">Название статьи</h1>
+              <p class="card-article__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur scard-imageint occaecat cupidatat non proident, sunt in culpa
+                qui officia deserunt mollit anim id est laborum.
+              </p>
+              <a href="#" class="card-article__link">Читать далее</a>
+              <div class="counter">
+                <div class="counter__count">300</div>
+                <button class="counter__plus counter__btn">+</button>
+                <button class="counter__minus counter__btn">-</button>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <figure class="card-image">
+              <img src="../imgs/party.jpg" alt="image" class="card-image__img" />
+            </figure>
+            <div class="card-article">
+              <h1 class="card-article__title">Название статьи</h1>
+              <p class="card-article__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+              </p>
+              <a href="#" class="card-article__link">Читать далее</a>
+              <div class="counter">
+                <div class="counter__count">300</div>
+                <button class="counter__plus counter__btn">+</button>
+                <button class="counter__minus counter__btn">-</button>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <figure class="card-image">
+              <img src="../imgs/meeting.jpg" alt="image" class="card-image__img" />
+            </figure>
+            <div class="card-article">
+              <h1 class="card-article__title">Название статьи</h1>
+              <p class="card-article__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+              </p>
+              <a href="#" class="card-article__link">Читать далее</a>
+              <div class="counter">
+                <div class="counter__count">300</div>
+                <button class="counter__plus counter__btn">+</button>
+                <button class="counter__minus counter__btn">-</button>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <figure class="card-image">
+              <img src="../imgs/leaf.png" alt="image" class="card-image__img" />
+            </figure>
+            <div class="card-article">
+              <h1 class="card-article__title">Название статьи</h1>
+              <p class="card-article__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+              </p>
+              <a href="#" class="card-article__link">Читать далее</a>
+              <div class="counter">
+                <div class="counter__count">300</div>
+                <button class="counter__plus counter__btn">+</button>
+                <button class="counter__minus counter__btn">-</button>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <figure class="card-image">
+              <img src="../imgs/leaf.png" alt="image" class="card-image__img" />
+            </figure>
+            <div class="card-article">
+              <h1 class="card-article__title">Название статьи</h1>
+              <p class="card-article__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+              </p>
+              <a href="#" class="card-article__link">Читать далее</a>
+              <div class="counter">
+                <div class="counter__count">300</div>
+                <button class="counter__plus counter__btn">+</button>
+                <button class="counter__minus counter__btn">-</button>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <figure class="card-image">
+              <img src="../imgs/meeting.jpg" alt="image" class="card-image__img" />
+            </figure>
+            <div class="card-article">
+              <h1 class="card-article__title">Название статьи</h1>
+              <p class="card-article__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+              </p>
+              <a href="#" class="card-article__link">Читать далее</a>
+              <div class="counter">
+                <div class="counter__count">300</div>
+                <button class="btn counter__plus counter__btn">+</button>
+                <button class="btn counter__minus counter__btn">-</button>
+              </div>
+            </div>
+          </article>
+        </section>
+        <button class="btn more-articles btn-primary">
+          <a href="#" class="more-articles__link">Больше Cтатей</a>
+        </button>
+      </div>
+      <button class="btn upwards-button">
+        <a href="#" class="upwards-button__link">Вернуться к началу ↑</a>
+      </button>
+      <form class="form modal hidden">
+        <div class="form__header">
+          <h2 class="header__title">Добавление новой статьи</h2>
+          <button class="btn header__close-button close-button close-modal">X</button>
+        </div>
+        <label for="article-name" class="input-label">Название статьи</label>
+        <input id="article-name" name="title" type="text" class="input form__input_text" required />
+        <label for="article-text" class="input-label">Текст статьи</label>
+        <textarea
+          name="content"
+          id="article-text"
+          class="input article-textarea"
+          required
+        ></textarea>
+        <label for="upload-file-input" class="input-file-label">Изображение </label>
+        <input id="upload-file-input" type="file" class="input-file" accept="image/*" />
+        <div class="form-buttons">
+          <button class="btn form-buttons__button close-button close-modal">Отменить</button>
+          <button class="btn form-buttons__button btn-primary" type="submit">Добавить</button>
+        </div>
+      </form>
+    </main>
+    <div class="overlay hidden"></div>
+  </body>
+</html>

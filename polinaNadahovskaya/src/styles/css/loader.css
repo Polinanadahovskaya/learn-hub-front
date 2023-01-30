@@ -1,0 +1,27 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  50% {
+    transform: scale(1.2);
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loader {
+  width: 70px;
+  height: 70px;
+  border-top: 8px solid rgb(247, 247, 34);
+  border-right: 8px solid rgb(49, 233, 12);
+  border-left: 8px solid rgb(12, 71, 233);
+  border-radius: 50%;
+  background-color: rgb(163, 31, 196);
+  background-image: url(../../imgs/peepo-loader.svg);
+  background-position: bottom;
+  background-size: cover;
+
+  animation: spin 2s cubic-bezier(1, 1, 1, 1) infinite;
+}

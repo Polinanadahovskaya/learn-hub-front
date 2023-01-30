@@ -1,0 +1,11 @@
+@mixin main-defaults($color, $background) {
+  overflow: hidden;
+  background-color: $background;
+  color: $color;
+}
+
+@mixin main-wrap-defaults($max-width: 1185px) {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 20px 0px;
+}

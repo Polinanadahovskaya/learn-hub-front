@@ -1,0 +1,19 @@
+@use '../abstracts/colors' as *;
+
+.btn-primary,
+.btn,
+.input-file::file-selector-button,
+.counter__plus,
+.counter__minus {
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.btn-primary:hover,
+.input-file::file-selector-button:hover {
+  background-color: $primary-hover;
+}
+
+.close-button:hover {
+  background-color: $system-fail;
+}

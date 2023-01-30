@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New article</title>
+    <link rel="stylesheet" href="../styles/css/new-article.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-logo-wrap">
+        <div class="header-logo">
+          <a class="header-logo__link" href="../../index.html">My blog</a>
+        </div>
+      </div>
+      <div class="header-main-wrap">
+        <div class="header-main">
+          <nav class="topnav">
+            <label for="search" class="sr-only">Поиск по сайту</label>
+            <input type="text" id="search" class="topnav__searchbar" placeholder="Search..." />
+            <a class="topnav__link" href="#">Добавить Статью</a>
+            <div class="burger">
+              <input type="checkbox" id="burger" class="burger__checkbox" />
+              <label for="burger" class="burger__label">
+                <div class="burger__line"></div>
+                <div class="burger__line"></div>
+                <div class="burger__line"></div>
+              </label>
+              <nav class="menu">
+                <a class="menu__link" href="../../index.html">На главную</a>
+                <a class="menu__link" href="./aboutus.html">Об авторе</a>
+              </nav>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main-wrap">
+        <form class="form">
+          <div class="form__header">
+            <h2 class="header__title">Добавление новой статьи</h2>
+            <button class="btn header__close-button close-button">X</button>
+          </div>
+          <label for="article-name" class="input-label">Название статьи</label>
+          <input id="article-name" type="text" class="input form__input_text" />
+          <label for="article-text" class="input-label">Текст статьи</label>
+          <textarea name="article-text" id="article-text" class="input article-textarea"></textarea>
+          <label for="upload-file-input" class="input-file-label">Изображение </label>
+          <input id="upload-file-input" type="file" class="input-file" />
+          <div class="form-buttons">
+            <button class="btn form-buttons__button">Отменить</button>
+            <button class="btn form-buttons__button btn-primary">Добавить</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

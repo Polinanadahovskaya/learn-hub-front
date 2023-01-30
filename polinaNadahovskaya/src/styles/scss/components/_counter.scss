@@ -1,0 +1,64 @@
+@use '../abstracts/colors' as *;
+
+.counter {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: $system-success;
+  font-size: 20px;
+  &__count {
+    margin-right: 5px;
+    font-weight: bolder;
+    font-size: 30px;
+    line-height: 35px;
+  }
+  &__btn {
+    width: 25px;
+    height: 25px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    color: $system-success;
+    box-shadow: 0px 1px 2px $box-shadow-default;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Droid Sans', sans-serif;
+    line-height: 25px;
+    text-align: center;
+  }
+  &__minus {
+    color: $system-fail;
+  }
+}
+
+@media (hover: hover) {
+  .counter {
+    &__plus {
+      &:hover {
+        background-color: $system-success;
+        color: $font-default;
+        cursor: pointer;
+      }
+    }
+    &__minus:hover {
+      background-color: $system-fail;
+      color: $font-default;
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .counter {
+    right: 15px;
+    width: 100px;
+    &__count {
+      font-size: 25px;
+      line-height: 25px;
+    }
+  }
+}

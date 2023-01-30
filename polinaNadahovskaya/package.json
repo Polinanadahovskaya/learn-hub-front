@@ -1,0 +1,32 @@
+{
+  "name": "nikita-lutskin",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/learnup.fronted/nikita-lutskin.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/learnup.fronted/nikita-lutskin/issues"
+  },
+  "homepage": "https://gitlab.com/learnup.fronted/nikita-lutskin#readme",
+  "devDependencies": {
+    "@babel/core": "^7.18.13",
+    "@babel/preset-env": "^7.18.10",
+    "eslint": "^8.23.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-image": "^6.3.1",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.54.5"
+  }
+}

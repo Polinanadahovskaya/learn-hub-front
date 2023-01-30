@@ -1,0 +1,137 @@
+@use '../abstracts/' as *;
+@use '../base/' as *;
+@use '../components';
+
+.form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  width: 70%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 17px 25px 20px 30px;
+  border-radius: 5px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px $box-shadow-default;
+  transform: translate(-50%, -50%);
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 44px;
+  }
+}
+
+.header {
+  &__title {
+    margin: 0;
+    color: $font-mute;
+    font-size: 20px;
+  }
+  &__close-button {
+    width: 37px;
+    height: 37px;
+    border: none;
+    border-radius: 4px;
+    background: white;
+    box-shadow: 0px 1px 2px $box-shadow-default;
+  }
+}
+
+.input {
+  margin: 10px 0 23px;
+  border: 1px solid $system-gray;
+  border-radius: 3px;
+  box-shadow: inset 0px 2px 1px $box-shadow-default;
+  &:focus {
+    border: 1px solid $primary-default;
+    outline: none;
+  }
+}
+
+.form__input_text {
+  box-sizing: border-box;
+  width: 100%;
+  height: 38px;
+  padding-left: 10px;
+}
+
+.article-textarea {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 200px;
+  padding: 10px 10px 10px;
+  resize: none;
+}
+
+.input-file {
+  width: 350px;
+  max-width: 350px;
+  margin-top: 15px;
+  color: var(--font-mute);
+  font-size: 16px;
+  &::file-selector-button {
+    width: 132px;
+    height: 32px;
+    margin: 0 30px;
+    padding: 8px 10px 8px 10px;
+    border: 1px solid $system-gray;
+    border-radius: 6px;
+    background-color: $primary-default;
+    box-shadow: 0px 1px 2px $box-shadow-default;
+    font-size: 14px;
+    cursor: pointer;
+  }
+}
+
+.form-buttons {
+  position: relative;
+  margin-left: 70%;
+  &__button {
+    height: 32px;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: white;
+    box-shadow: 0px 1px 2px $box-shadow-default;
+    font-size: 16px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+}
+
+.btn-primary {
+  background-color: $primary-default;
+}
+
+@media screen and (max-width: 970px) {
+  .form {
+    margin: 0 2%;
+  }
+
+  .article-textarea {
+    height: 75%;
+  }
+
+  .form-buttons {
+    margin-top: 30px;
+  }
+
+  .input-file::file-selector-button {
+    margin: 0 5px 0 0;
+  }
+}
